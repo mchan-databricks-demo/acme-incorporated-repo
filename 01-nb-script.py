@@ -11,3 +11,7 @@ df = spark.read
         .withColumn(“fname”, input_file_name())
         .withColumn(“ingesttime”, current_timesstamp())
 	.load(s3Path) 
+
+# COMMAND ----------
+
+print("some change here ")
